@@ -1,0 +1,57 @@
+﻿Γùç injecting env (4) from .env // tip: Γùê secrets for agents [www.dotenvx.com]
+bcrypt version check...
+Hash created: $2b$10$9A.6mW9Gb0Iv.OhNZNBC4.YHOI7YwC/GFvEAFdlYFYTHN3OhtuNOu
+Match result: true
+
+MongoDB test...
+MongoDB connected
+
+Creating user...
+node : Γ¥î Test failed: 
+next is not a function
+At line:1 char:1
++ node test-auth.js 2>&1 
+| Out-File -FilePath 
+test-auth-result.txt -Enc 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (Γ  
+  ¥î Test failed: next    
+ is not a function:Str    
+ing) [], RemoteExcept    
+ion
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+TypeError: next is not a 
+function
+    at model.<anonymous> (
+C:\Users\Vamsi\OneDrive\De
+sktop\onchat\backend\model
+s\User.js:63:5)
+    at async 
+Kareem.execPre (C:\Users\V
+amsi\OneDrive\Desktop\onch
+at\backend\node_modules\ka
+reem\index.js:70:24)
+    at async 
+model.$__save (C:\Users\Va
+msi\OneDrive\Desktop\oncha
+t\backend\node_modules\mon
+goose\lib\model.js:397:5)
+    at async model.save (C
+:\Users\Vamsi\OneDrive\Des
+ktop\onchat\backend\node_m
+odules\mongoose\lib\model.
+js:667:5)
+    at async model.create 
+(C:\Users\Vamsi\OneDrive\D
+esktop\onchat\backend\node
+_modules\mongoose\lib\mode
+l.js:2754:5)
+    at async test (C:\User
+s\Vamsi\OneDrive\Desktop\o
+nchat\backend\test-auth.js
+:29:18)

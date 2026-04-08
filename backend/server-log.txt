@@ -1,0 +1,51 @@
+﻿Γùç injecting env (4) from .env // tip: Γîÿ custom filepath { path: '/custom/path/.env' }
+≡ƒÜÇ Server running dynamically on http://localhost:5000
+≡ƒöî New user connected: PwfE7F1jIu_y2JewAAAB
+≡ƒöî New user connected: TiQ7pOqTA81SYN7pAAAD
+Γ£à Connected to Local Automatic MongoDB (PERSISTENT) securely!
+node : Registration 
+error: TypeError: next is 
+not a function
+At line:1 char:1
++ node server.js 2>&1 | 
+Out-File -FilePath 
+server-log.txt -Encoding 
+utf ...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (R  
+  egistration er... not   
+  a function:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+    at model.<anonymous> (
+C:\Users\Vamsi\OneDrive\De
+sktop\onchat\backend\model
+s\User.js:63:5)
+    at async 
+Kareem.execPre (C:\Users\V
+amsi\OneDrive\Desktop\onch
+at\backend\node_modules\ka
+reem\index.js:70:24)
+    at async 
+model.$__save (C:\Users\Va
+msi\OneDrive\Desktop\oncha
+t\backend\node_modules\mon
+goose\lib\model.js:397:5)
+    at async model.save (C
+:\Users\Vamsi\OneDrive\Des
+ktop\onchat\backend\node_m
+odules\mongoose\lib\model.
+js:667:5)
+    at async model.create 
+(C:\Users\Vamsi\OneDrive\D
+esktop\onchat\backend\node
+_modules\mongoose\lib\mode
+l.js:2754:5)
+    at async C:\Users\Vams
+i\OneDrive\Desktop\onchat\
+backend\routes\authRoutes.
+js:42:18

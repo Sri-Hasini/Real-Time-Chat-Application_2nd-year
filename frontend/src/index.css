@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap');
+
+:root {
+  /* Premium Dark Theme Core Variables */
+  --bg-color: #0b0f19;
+  --panel-bg: rgba(22, 27, 40, 0.65);
+  --panel-border: rgba(255, 255, 255, 0.08);
+  
+  /* Text Colors */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  
+  /* Accents */
+  --accent-primary: #8b5cf6;   /* Rich Violet */
+  --accent-glow: rgba(139, 92, 246, 0.4);
+  --accent-secondary: #0ea5e9; /* Electric Blue */
+  --status-online: #10b981;    /* Emerald */
+  --whatsapp-green: #25d366;   /* WhatsApp Green */
+  
+  /* UI/UX Utility */
+  --border-radius: 16px;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --blur: blur(16px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.1), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(14, 165, 233, 0.08), transparent 25%);
+  color: var(--text-main);
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--panel-bg);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: 'Inter', sans-serif;
+  color: inherit;
+  transition: var(--transition);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* App Layout Structure */
+.app-container {
+  display: flex;
+  height: 100vh;
+  padding: 24px;
+  gap: 24px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .app-container {
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 12px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 8px;
+    gap: 8px;
+  }
+}
+
+/* Base Component Styles */
+.sidebar {
+  flex: 0 0 320px;
+  min-width: 260px; /* Allow some shrinking but keep it usable */
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    flex: 0 0 260px;
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    flex: 0 0 80px; /* Icon-only sidebar on very small screens */
+    min-width: 80px;
+  }
+  
+  .sidebar .my-info, 
+  .sidebar .header-actions,
+  .sidebar .sidebar-search,
+  .sidebar .chat-item-info,
+  .sidebar .chat-item-footer {
+    display: none;
+  }
+  
+  .sidebar .chat-item {
+    justify-content: center;
+    padding: 12px;
+  }
+  
+  .sidebar .avatar-container {
+    margin: 0;
+  }
+}
+
+.chat-area {
+  flex: 1;
+  min-width: 0;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}

@@ -1,0 +1,14 @@
+﻿Γùç injecting env (4) from .env // tip: Γùê secrets for agents [www.dotenvx.com]
+bcrypt version check...
+Hash created: $2b$10$t7kn6XAgfdr.FC7IgLSmiuqluYm1mKm9S/GBKK54SVI0dC.bXGQnm
+Match result: true
+
+MongoDB test...
+MongoDB connected
+
+Creating user...
+User created: authtest2026
+Password hashed: true
+Password match: true
+
+Γ£à All tests passed!
